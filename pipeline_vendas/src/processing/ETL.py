@@ -1,6 +1,6 @@
 import pandas as pd
 
-def validate_sales_data(df: pd.DataFrame) -> pd.DataFrame:
+def tratamento_dados(df: pd.DataFrame) -> pd.DataFrame:
     """
     Valida e limpa dados de vendas.
     - Remove registros sem produto
