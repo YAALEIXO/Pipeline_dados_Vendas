@@ -1,0 +1,34 @@
+id_venda,data_venda,produto,categoria,quantidade,preco_unitario,canal
+1,2022-01-10,Notebook,Eletrônicos,1,3200,Online
+2,2022-02-05,Mouse,Periféricos,2,75,Loja Física
+3,2022-02-20,Teclado,Periféricos,1,140,Online
+4,2022-03-15,Monitor,Eletrônicos,1,1100,Online
+5,2022-04-01,Headset,Periféricos,1,250,Loja Física
+6,2022-05-12,Notebook,Eletrônicos,1,3300,Online
+7,2022-06-18,Cadeira Gamer,Móveis,1,900,Online
+8,2022-07-09,Mouse,Periféricos,3,70,Online
+9,2022-08-21,Monitor,Eletrônicos,2,1150,Loja Física
+10,2022-09-30,Teclado,Periféricos,1,160,Online
+12,2022-11-25,Notebook,Eletrônicos,2,3250,Loja Física
+13,2022-12-18,Headset,Periféricos,2,260,Online
+14,2023-01-07,Mouse,Periféricos,1,85,Online
+15,2023-02-14,Notebook,Eletrônicos,1,3600,Loja Física
+16,2023-03-03,Monitor,Eletrônicos,1,1250,Online
+17,2023-04-22,Cadeira Gamer,Móveis,1,950,Loja Física
+18,2023-05-09,Teclado,Periféricos,2,155,Online
+19,2023-06-30,Notebook,Eletrônicos,1,3700,Online
+20,2023-07-17,Mouse,Periféricos,4,90,Online
+21,2023-08-08,Headset,Periféricos,1,280,Loja Física
+22,2023-09-19,Monitor,Eletrônicos,2,1300,Online
+24,2023-11-23,Notebook,Eletrônicos,2,3650,Online
+25,2023-12-15,Teclado,Periféricos,1,170,Online
+26,2024-01-05,Notebook,Eletrônicos,1,3500,Online
+27,2024-01-06,Mouse,Periféricos,2,80,Loja Física
+28,2024-01-06,Teclado,Periféricos,1,150,Online
+29,2024-01-07,Monitor,Eletrônicos,1,1200,Online
+31,2024-02-11,Headset,Periféricos,2,300,Online
+32,2024-03-08,Cadeira Gamer,Móveis,1,980,Loja Física
+33,2024-04-19,Notebook,Eletrônicos,1,3800,Online
+34,2024-05-27,Mouse,Periféricos,5,95,Online
+35,2024-06-14,Monitor,Eletrônicos,2,1350,Loja Física
+36,2024-07-03,Teclado,Periféricos,3,165,Online
