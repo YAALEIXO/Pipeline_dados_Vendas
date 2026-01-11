@@ -1,0 +1,42 @@
+from ingestion.load import load_sales_data
+from processing.ETL import tratamento_dados
+from ingestion.a import conta
+from pathlib import Path
+from utils.db_conection import get_sqlserver_engine
+from loader_db.load_to_sqlserver import load_dataframe_to_sqlserver
+# usamos o from para buscar a função que criamos na pasta onde esta o codigo, usamos o "." para chamar a função que esta dentro do codigo
+#---------------------------------------------------------
+
+def run_pipeline():
+    # raw_path ´e o direrio onde esta o arquivo
+    raw_path = Path("pipeline_vendas/data/raw/vendas.csv")
+    # processed_path e o resultado esperado apos o prcessamento
+    processed_path = Path("pipeline_vendas/data/processed/vendas_tratadas.csv")
+    #Criação do df aparti da função load_sales_data que sera relizaçã a partir do documento que esta na vairavel raw_path
+    df = load_sales_data(raw_path)
+    # o df_clean ja seria o uso da função tratamento_dados qe
+    df_clean = tratamento_dados(df)
+    # processed_path comando pra criar uma pasta para colocar as vendas tradas.csv
+    processed_path.parent.mkdir(parents=True, exist_ok=True)
+    #df_clean.to_csv exporta para csv
+    df_clean.to_csv(processed_path, index=False)
+    # essa variavel busca a função  get_sqlserver_engine
+    engine = get_sqlserver_engine(
+        server="DESKTOP-OTNECLH\\SQLEXPRESS",
+        database="DW"
+    )
+
+    load_dataframe_to_sqlserver(
+        df=df_clean,
+        engine=engine,
+        table_name="vendas",
+        schema="stg"
+    )
+   
+
+    print("Pipeline executado com sucesso!")
+   
+    
+
+if __name__ == "__main__":
+    run_pipeline()
